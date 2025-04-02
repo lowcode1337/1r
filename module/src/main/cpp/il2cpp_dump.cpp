@@ -97,7 +97,7 @@ std::string dump_method(Il2CppClass *klass) {
     outPut << "\n\t// Methods\n";
     void *iter = nullptr;
     while (auto method = il2cpp_class_get_methods(klass, &iter)) {
-         outPut << "\n"
+         outPut << "\n";
         //TODO attribute
         if (method->methodPointer) {
             outPut << "\t// RVA: 0x";
